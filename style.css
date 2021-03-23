@@ -1,0 +1,127 @@
+body {
+  display: flex;
+  font-family: helvetica;
+}
+
+.display {
+  width: 320px;
+  height: 60px;
+  border: 2px solid #7e7e7e;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+#display-text {
+  padding-top: 7px;
+  font-size: 45px;
+  text-align: right;
+  color: #7e7e7e;
+}
+
+.grid-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 350px;
+  height: 560px;
+  border: 10px solid #7e7e7e;
+  border-radius: 15px;
+}
+
+.first, .second, .third, .fourth, .fifth {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.number-btn, .decimal-btn {
+  background-color: #7E7E7E;
+  color: #F5F5F5;
+  border: 2px solid #F5F5F5;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.operator-btn, .clear-btn, .delete-btn, .flip-btn, .percent-btn {
+  background-color: #F5F5F5;
+  color: #7E7E7E;
+  border: 2px solid #7E7E7E;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.equals-btn {
+  background-color: #F5F5F5;
+  color: black;
+  border: 2px solid #7E7E7E;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.bttn:hover {
+  cursor: pointer;
+}
+
+.number-btn:hover, .decimal-btn:hover {
+  background-color: rgb(126, 126, 126, 0.9);
+}
+
+.number-btn:active, .decimal-btn:active {
+  background-color: rgb(126, 126, 126, 0.7);
+}
+
+.equals-btn:hover, .operator-btn:hover, .flip-btn:hover, .clear-btn:hover, .delete-btn:hover, .percent-btn:hover {
+  background-color: #e8e8e8;
+}
+
+.equals-btn:active, .operator-btn:focus, .flip-btn:active, .clear-btn:active, .delete-btn:active, .percent-btn:active {
+  background-color: #cfcfcf;
+  color: #f5f5f5;
+}
+
+.delete-btn {
+  background: url(/images/backspace.svg) no-repeat;
+  background-size: 75%;
+  background-position: center;
+}
+
+.delete-btn:active {
+  background: url(/images/backspace-light.png) no-repeat;
+  background-size: 75%;
+  background-position: center;
+  background-color: #cfcfcf;
+}
+
+#footer {
+  font-family: helvetica;
+  color: #7e7e7e;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  line-height: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+#overflow {
+  font-family: helvetica;
+  color: #7e7e7e;
+  position: fixed;
+  left: 0;
+  bottom: 200px;
+  line-height: 15px;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
